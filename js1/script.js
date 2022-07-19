@@ -1,11 +1,3 @@
-
-// var names = [ 'tengo', 'meo', 'uzu', 'xnn']
-// for (var x=0; x<names.length; x++){
-//     console.log(names[x]);
-// }
-
-// Homework1
-
 let  user = {
 
 
