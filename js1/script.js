@@ -18,6 +18,8 @@ let  user = {
     };
 
 console.log(typeof studentstatus);
+console.log(user.studentstatus);
+
 
 
 // homework2
