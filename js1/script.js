@@ -63,52 +63,53 @@ else{
 
 // homework5
 
-let array = [ 'watermelon', 'pear', 10, 45, 50, 'apple', 'ananas' ];
+var array = [ 'watermelon', 'pear', 10, 45, 50, 'apple', 'ananas' ] ;
 
-for (i=0; i<array.length; i++){
-    if (typeof array[i] === 'string'){
-        console.log(array[i]);
-    }
+for (var item of array){
+    if (typeof item == 'string')
+    console.log(item);
 }
 
 // homework6
 
-let arrayx = [32, 10, 'hello', null, 'hello2', 50 ]
+var array = [32, 10, 'hello', null, 'hello2', 50 ]
 
-for (let i=0; i<arrayx.length; i++){
-    if (typeof arrayx[i] != 'string'){
-        console.log(arrayx[i]);
-    }
+for (var item of array){
+    if(item % 5 == 0 && typeof item == 'number')
+    console.log(item)
 }
 
 // homework7
 
-let arrayy = [ [2, -3, 5, 10], [25, -24, -11, 100] , [-6, -7, 10] ];
+var array = [ [2, -3, 5, 10], [25, -24, -11, 100] , [-6, -7, 10] ]
 
-for (let i=0; i<arrayy.length; i++){
-    if (arrayy[i] >= 0){
-        console.log(arrayy[i]);
-    }
+for (let i = 0; i < array.length; i++) {
+    const numbers = array[i];
+
+for (let x = 0; x < numbers.length; x++) {
+    const positive = numbers[x];
+    if (positive > 0)
+    console.log(positive);
 }
+}
+
 
 // additional1
 
-let array1 = [ 2, 3, 5, 10,25,24,11, 100 , 6,7, 10 ]
+var array = [ 2, 3, 5, 10, 25, 24, 11, 100 , 6, 7, 10 ]
 
-for(let i=0; i<array1.length; i++){
-    if(array1[i] % 2 == 0){
-        console.log(array1[i]);
-    }
+for (let x of array){
+    if(x % 2 == 0)
+    console.log(x)
 }
 
 // additional2
 
-let array2 = [ 2, 3, 5, 10,25,24,11, 100 , 6,7, 10 ];
+var array = [ 2, 3, 5, 10, 25, 24, 11, 100 , 6, 7, 10 ]
 
-for(let i=0; i<array2.length; i++){
-    if(array2[i] % 2 != 0){
-        console.log(array2[i]);
-    }
+for (let x of array){
+    if(x % 2 == 1)
+    console.log(x)
 }
 
 
