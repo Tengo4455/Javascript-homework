@@ -1,0 +1,67 @@
+.posts {
+    background-color: rgb(62, 81, 228);
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 600px;
+}
+.post-id {
+    font-size: 30px;
+    color: rgb(50, 241, 7);
+}
+h3, h2 {
+    display: inline-block;
+}
+.overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(197, 0, 0);
+    display: none;
+}
+.overlay.active {
+    display: block;
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #fff;
+}
+.description {
+    color: #fff;
+    font-size: 35px;
+    padding: 30px;
+}
+
+.add-post {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(10, 250, 242);
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    font-size: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.overlay-add {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(100, 0, 98);
+    display: none;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.overlay-add.active {
+    display: block;
+}
