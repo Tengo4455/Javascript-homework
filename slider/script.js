@@ -42,13 +42,20 @@ let data = [
   }
   
   function createImgtag(item) {
-    const tagImage = document.createElement("img");
-    tagImage.setAttribute("src", item.imageUrl);
-    tagImage.setAttribute("alt", item.title);
+  //   const tagImage = document.createElement("img");
+  //   tagImage.setAttribute("src", item.imageUrl);
+  //   tagImage.setAttribute("alt", item.title);
+
+  const tagBGImage = document.createElement("div");
+  tagBGImage.style.background = `url(${item.imageUrl})`;
+  tagBGImage.classList.add("bg-image");
   
-    return tagImage;
+    return tagBGImage;
   }
-  
+
+
+
+
   function createH2ag(item) {
     const tagTitle = document.createElement("h2");
     tagTitle.textContent = item.title;
